@@ -22,7 +22,7 @@ void drawLine(int x1, int y1, int x2, y2) {
     currentX = x1;
     currentY = y1;
 
-    cout << "Coordinates on the line:" << endl;
+    cout << "Koordinat Garis : " << endl;
 
     for (int i = 0; i <= steps; i++) {
         cout << "(" << round(currentX) << ", " << round(currentY) << ")" << endl;
@@ -34,9 +34,9 @@ void drawLine(int x1, int y1, int x2, y2) {
 int main() {
     int xStart, yStart, xEnd, yEnd;
 
-    cout << "Enter the coordinates of the starting point (x1 y1): ";
+    cout << "Masukkan titik koordinat awal (x1 y1): ";
     cin >> xStart >> yStart;
-    cout << "Enter the coordinates of the ending point (x2 y2): ";
+    cout << "Masukkan titik koordinat akhir (x2 y2): ";
     cin >> xEnd >> yEnd;
 
     drawLine(xStart, yStart, xEnd, yEnd);
