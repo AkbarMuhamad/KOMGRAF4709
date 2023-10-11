@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void drawLine(int x1, int y1, int x2, y2) {
+void drawLine(int x1, int y1, int x2, int y2) {
     int deltaX, deltaY, steps;
     float xIncrement, yIncrement, currentX, currentY;
 
@@ -16,13 +16,13 @@ void drawLine(int x1, int y1, int x2, y2) {
         steps = abs(deltaY);
     }
 
-    xIncrement = float(deltaX) / steps;
-    yIncrement = float(deltaY) / steps;
+    xIncrement = static_cast<float>(deltaX) / steps;
+    yIncrement = static_cast<float>(deltaY) / steps;
 
     currentX = x1;
     currentY = y1;
 
-    cout << "Koordinat Garis : " << endl;
+    cout << "Titik koordinat garis :" << endl;
 
     for (int i = 0; i <= steps; i++) {
         cout << "(" << round(currentX) << ", " << round(currentY) << ")" << endl;
